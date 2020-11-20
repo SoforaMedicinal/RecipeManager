@@ -50,7 +50,7 @@
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Ingredient";
+            this.columnHeader2.Text = "Ингредиенты";
             this.columnHeader2.Width = 185;
             // 
             // cancelButton
@@ -60,7 +60,7 @@
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 8;
-            this.cancelButton.Text = "Cancel";
+            this.cancelButton.Text = "Закрыть";
             this.cancelButton.UseVisualStyleBackColor = true;
             // 
             // acceptButton
@@ -70,7 +70,7 @@
             this.acceptButton.Name = "acceptButton";
             this.acceptButton.Size = new System.Drawing.Size(75, 23);
             this.acceptButton.TabIndex = 7;
-            this.acceptButton.Text = "Accept";
+            this.acceptButton.Text = "Добавить";
             this.acceptButton.UseVisualStyleBackColor = true;
             // 
             // AddIngredientForm
@@ -84,7 +84,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "AddIngredientForm";
-            this.Text = "Ingredients";
+            this.Text = "Ингредиенты";
             this.ResumeLayout(false);
 
         }
