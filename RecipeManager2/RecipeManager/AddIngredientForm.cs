@@ -29,15 +29,26 @@ namespace RecipeManager
         {
             get
             {
-                if (listView1.SelectedItems.Count == 0)
-                {
+                
+                    if (listView1.SelectedItems.Count == 0)
+                    {
+                        return null;
+                    }
+                    else
+                    {
+                    ListView.SelectedIndexCollection indexes =listView1.SelectedIndices;
+                    foreach (int i in indexes)
+                    {
+                        
+
+                            return _ingredients[i];
+                        }
+
+
                     return null;
+
                 }
-                else
-                {
-                    int index = listView1.SelectedIndices[0];
-                    return _ingredients[index];
-                }
+                
             }
         }
         private void ListOutput(IngredientStorage container)

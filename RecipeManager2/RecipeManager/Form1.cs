@@ -361,5 +361,24 @@ namespace RecipeManager
             return false;
         }
 
+        private void LvGroup_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtNameGrou_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LvIngredient_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
