@@ -26,9 +26,9 @@ namespace RecipeManager
 
         }
 
-        public RecipeForm(ObjectStorage storage, Recipe recipe) : this (storage)
+        public RecipeForm(ObjectStorage storage, Recipe recipe) : this(storage)
         {
-            txtDescription.Text = recipe.Description; 
+            txtDescription.Text = recipe.Description;
             SelectedGroup = recipe.Group;
             _ingredient = recipe.Ingredients;
             _ingredient.Changed += ingredient_Changed;
@@ -48,7 +48,7 @@ namespace RecipeManager
                 }
                 return _storage.GetGroups().ElementAt(cmbGroup.SelectedIndex);
             }
-            set 
+            set
             {
                 cmbGroup.SelectedIndex = _storage.GetGroups()[value];
             }
@@ -80,8 +80,12 @@ namespace RecipeManager
 
             if (formIngr.DialogResult == System.Windows.Forms.DialogResult.OK)
                 if (formIngr.Ingredient != null)
-                _ingredient.Add(formIngr.Ingredient);
+                    for (int i = 0; i < formIngr.Ingredient.Length; i++)
+                    {
+                        _ingredient.Add(formIngr.Ingredient[i]);
+                    }
         }
+    
 
         private void removeButton_Click(object sender, EventArgs e)
         {

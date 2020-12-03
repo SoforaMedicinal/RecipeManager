@@ -1,0 +1,13 @@
+D:\Practis\RecipeManagerGit\RecipeManager\RecipeManager2\RecipeManager\obj\Debug\RecipeManager.csprojAssemblyReference.cache
+D:\Practis\RecipeManagerGit\RecipeManager\RecipeManager2\RecipeManager\obj\Debug\RecipeManager.AddIngredientForm.resources
+D:\Practis\RecipeManagerGit\RecipeManager\RecipeManager2\RecipeManager\obj\Debug\RecipeManager.Form1.resources
+D:\Practis\RecipeManagerGit\RecipeManager\RecipeManager2\RecipeManager\obj\Debug\RecipeManager.RecipeForm.resources
+D:\Practis\RecipeManagerGit\RecipeManager\RecipeManager2\RecipeManager\obj\Debug\RecipeManager.Properties.Resources.resources
+D:\Practis\RecipeManagerGit\RecipeManager\RecipeManager2\RecipeManager\obj\Debug\RecipeManager.csproj.GenerateResource.cache
+D:\Practis\RecipeManagerGit\RecipeManager\RecipeManager2\RecipeManager\obj\Debug\RecipeManager.csproj.CoreCompileInputs.cache
+D:\Practis\RecipeManagerGit\RecipeManager\RecipeManager2\RecipeManager\bin\Debug\App.config
+D:\Practis\RecipeManagerGit\RecipeManager\RecipeManager2\RecipeManager\bin\Debug\RecipeManager.exe.config
+D:\Practis\RecipeManagerGit\RecipeManager\RecipeManager2\RecipeManager\bin\Debug\RecipeManager.exe
+D:\Practis\RecipeManagerGit\RecipeManager\RecipeManager2\RecipeManager\bin\Debug\RecipeManager.pdb
+D:\Practis\RecipeManagerGit\RecipeManager\RecipeManager2\RecipeManager\obj\Debug\RecipeManager.exe
+D:\Practis\RecipeManagerGit\RecipeManager\RecipeManager2\RecipeManager\obj\Debug\RecipeManager.pdb
