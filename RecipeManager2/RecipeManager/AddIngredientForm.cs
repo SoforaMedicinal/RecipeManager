@@ -20,7 +20,9 @@ namespace RecipeManager {
             ListOutput(_ingredients);
         }
 
-
+        public AddIngredientForm(ListView.ListViewItemCollection items)
+        {
+        }
 
         public Ingredient[] Ingredient
         {

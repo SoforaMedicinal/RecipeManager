@@ -84,12 +84,16 @@ namespace RecipeManager
                     {
                         _ingredient.Add(formIngr.Ingredient[i]);
                     }
+            
         }
     
 
         private void removeButton_Click(object sender, EventArgs e)
         {
-            if (lvAddIngredients.SelectedItems.Count == 0)
+            AddIngredientForm formIngr = new AddIngredientForm(lvAddIngredients.Items); 
+            formIngr.ShowDialog();
+            if (formIngr.DialogResult == System.Windows.Forms.DialogResult.OK)
+                if (formIngr.Ingredient == null)
             {
                 MessageBox.Show("Please select at least one item from the list", "Delete error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -97,8 +101,17 @@ namespace RecipeManager
             }
             else
             {
-                _ingredient.Remove(lvAddIngredients.SelectedIndices[0]);
-            }
+                    List<int> selected = new List<int>();
+                    for (int i = lvAddIngredients.Items.Count - 1; i >= 0; i--)
+                    {
+                        if (lvAddIngredients.Items[i].Selected)
+                        {
+                            selected.Add(i);
+                        }
+                    }
+                    foreach (int s in selected)
+                        _ingredient.Remove(lvAddIngredients.Items[s].Index);
+                }
         }
 
         private void btnSave_Click(object sender, EventArgs e) {

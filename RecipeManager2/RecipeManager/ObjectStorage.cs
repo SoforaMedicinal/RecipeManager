@@ -72,6 +72,10 @@ namespace RecipeManager
         {
             return _ingredient;
         }
+        public IngredientStorage GetIngredientForRemove()
+        {
+            return _ingredient;
+        }
 
         public DishCategoryComposition GetGroups()
         {
