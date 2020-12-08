@@ -53,7 +53,7 @@ namespace RecipeManager
         #region XmlCteatAndLoad
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult res = MessageBox.Show("Save this file?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            DialogResult res = MessageBox.Show("Сохранить этот файл?", "Подтверждение", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             switch (res)
             {
                 case DialogResult.Yes:
@@ -89,7 +89,7 @@ namespace RecipeManager
             RecipeManagerData data = null;
             if (!File.Exists($@"{filePath}"))
             {
-                DialogResult res = MessageBox.Show($"File '{filePath}' was not found. Would you like to load data from different location?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult res = MessageBox.Show($"Файл '{filePath}' не найден. Возможно файл поменял своё расположение?", "Подтверждение", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (res == DialogResult.Yes)
                 {
                     OpenFileDialog openFile = new OpenFileDialog();
@@ -162,7 +162,7 @@ namespace RecipeManager
         {
             if (mainListView.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Please select at least one item from the list", "Delete error",
+                MessageBox.Show("Пожалуйста, выберите хотя бы один пункт из списка", "Ошибка удаления",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -176,7 +176,7 @@ namespace RecipeManager
         {
             if (mainListView.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Please select at least one item from the list", "Delete error",
+                MessageBox.Show("Пожалуйста, выберите хотя бы один пункт из списка", "Ошибка удаления",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -223,7 +223,7 @@ namespace RecipeManager
             var createResult = Ingredient.Create(txtNameIngr.Text);
             if (!createResult.Succeeded)
             {
-                MessageBox.Show(string.Join(Environment.NewLine, createResult.Errors), "Ingredient creation error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(string.Join(Environment.NewLine, createResult.Errors), "Ошибка создания ингредиента", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -235,7 +235,7 @@ namespace RecipeManager
         {
             if (lvIngredient.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Please select at least one item from the list", "Delete error",
+                MessageBox.Show("Пожалуйста, выберите хотя бы один пункт из списка", "Ошибка удаления",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -248,7 +248,7 @@ namespace RecipeManager
                 }
                 else
                 {
-                    MessageBox.Show("This ingredient is in the recipe", "Delete error",
+                    MessageBox.Show("Этот ингредиент уже в рецепте", "Ошибка удаления",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -260,7 +260,7 @@ namespace RecipeManager
         {
             if (lvIngredient.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Please select at least one item from the list", "Delete error",
+                MessageBox.Show("Пожалуйста, выберите хотя бы один пункт из списка", "Ошибка удаления",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -300,7 +300,7 @@ namespace RecipeManager
             var createResult = DishCategory.Create(txtNameGrou.Text);
             if (!createResult.Succeeded)
             {
-                MessageBox.Show(string.Join(Environment.NewLine, createResult.Errors), "Group creation error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(string.Join(Environment.NewLine, createResult.Errors), "Ошибка создания категории", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -312,7 +312,7 @@ namespace RecipeManager
         {
             if (lvGroup.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Please select at least one item from the list", "Delete error",
+                MessageBox.Show("Пожалуйста, выберите хотя бы один пункт из списка", "Ошибка удаления",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -325,7 +325,7 @@ namespace RecipeManager
                 }
                 else
                 {
-                    MessageBox.Show("This group is in the recipe", "Delete error",
+                    MessageBox.Show("Вы уже указали эту категорию для рецепта", "Ошибка удаления",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -336,7 +336,7 @@ namespace RecipeManager
         {
             if (lvGroup.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Please select at least one item from the list", "Delete error",
+                MessageBox.Show("Пожалуйста, выберите хотя бы один пункт из списка", "Ошибка удаления",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }

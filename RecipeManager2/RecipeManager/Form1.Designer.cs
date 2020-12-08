@@ -98,9 +98,9 @@
             this.tabPageRecipe.Location = new System.Drawing.Point(4, 22);
             this.tabPageRecipe.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageRecipe.Name = "tabPageRecipe";
-            this.tabPageRecipe.Size = new System.Drawing.Size(770, 518);
+            this.tabPageRecipe.Size = new System.Drawing.Size(1050, 575);
             this.tabPageRecipe.TabIndex = 0;
-            this.tabPageRecipe.Text = "Recipes";
+            this.tabPageRecipe.Text = "Рецепты";
             this.tabPageRecipe.UseVisualStyleBackColor = true;
             // 
             // splitContainer1
@@ -116,8 +116,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(770, 424);
-            this.splitContainer1.SplitterDistance = 373;
+            this.splitContainer1.Size = new System.Drawing.Size(1050, 481);
+            this.splitContainer1.SplitterDistance = 508;
             this.splitContainer1.TabIndex = 15;
             // 
             // mainListView
@@ -135,7 +135,7 @@
             this.mainListView.MultiSelect = false;
             this.mainListView.Name = "mainListView";
             this.mainListView.ShowGroups = false;
-            this.mainListView.Size = new System.Drawing.Size(373, 424);
+            this.mainListView.Size = new System.Drawing.Size(508, 481);
             this.mainListView.TabIndex = 6;
             this.mainListView.UseCompatibleStateImageBehavior = false;
             this.mainListView.View = System.Windows.Forms.View.Details;
@@ -164,8 +164,8 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.panel2);
-            this.splitContainer2.Size = new System.Drawing.Size(393, 424);
-            this.splitContainer2.SplitterDistance = 131;
+            this.splitContainer2.Size = new System.Drawing.Size(538, 481);
+            this.splitContainer2.SplitterDistance = 179;
             this.splitContainer2.TabIndex = 0;
             // 
             // lvIngredientsRecipe
@@ -182,7 +182,7 @@
             this.lvIngredientsRecipe.MultiSelect = false;
             this.lvIngredientsRecipe.Name = "lvIngredientsRecipe";
             this.lvIngredientsRecipe.ShowGroups = false;
-            this.lvIngredientsRecipe.Size = new System.Drawing.Size(131, 424);
+            this.lvIngredientsRecipe.Size = new System.Drawing.Size(179, 481);
             this.lvIngredientsRecipe.TabIndex = 7;
             this.lvIngredientsRecipe.UseCompatibleStateImageBehavior = false;
             this.lvIngredientsRecipe.View = System.Windows.Forms.View.Details;
@@ -200,7 +200,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(258, 424);
+            this.panel2.Size = new System.Drawing.Size(355, 481);
             this.panel2.TabIndex = 14;
             // 
             // label2
@@ -229,7 +229,7 @@
             this.vlRevipeSteps.MultiSelect = false;
             this.vlRevipeSteps.Name = "vlRevipeSteps";
             this.vlRevipeSteps.ShowGroups = false;
-            this.vlRevipeSteps.Size = new System.Drawing.Size(241, 389);
+            this.vlRevipeSteps.Size = new System.Drawing.Size(338, 446);
             this.vlRevipeSteps.TabIndex = 8;
             this.vlRevipeSteps.UseCompatibleStateImageBehavior = false;
             // 
@@ -245,16 +245,16 @@
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnEdit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 424);
+            this.panel1.Location = new System.Drawing.Point(0, 481);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(770, 94);
+            this.panel1.Size = new System.Drawing.Size(1050, 94);
             this.panel1.TabIndex = 13;
             // 
             // btnAdd
             // 
             this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnAdd.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnAdd.Location = new System.Drawing.Point(216, 22);
+            this.btnAdd.Location = new System.Drawing.Point(356, 22);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -268,7 +268,7 @@
             // btnDelete
             // 
             this.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnDelete.Location = new System.Drawing.Point(460, 22);
+            this.btnDelete.Location = new System.Drawing.Point(600, 22);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -282,7 +282,7 @@
             // btnEdit
             // 
             this.btnEdit.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnEdit.Location = new System.Drawing.Point(338, 22);
+            this.btnEdit.Location = new System.Drawing.Point(478, 22);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -302,7 +302,7 @@
             this.tabPageIngredientGroup.Name = "tabPageIngredientGroup";
             this.tabPageIngredientGroup.Size = new System.Drawing.Size(1050, 575);
             this.tabPageIngredientGroup.TabIndex = 0;
-            this.tabPageIngredientGroup.Text = "Ingredients/Groups";
+            this.tabPageIngredientGroup.Text = "Ингредиенты/Категории";
             this.tabPageIngredientGroup.UseVisualStyleBackColor = true;
             // 
             // groupBox2

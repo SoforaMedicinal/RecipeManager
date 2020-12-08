@@ -10,12 +10,12 @@ using System.Xml.Serialization;
 namespace RecipeManager
 {
     [Serializable]
-    [XmlRoot(ElementName = "Recipes")]
+    [XmlRoot(ElementName = "Рецепты")]
     public class RecipeContainer : IEnumerable<Recipe>
     {
         public event EventHandler Changed;
 
-        [XmlArrayItem("ListOfRecipe")]
+        [XmlArrayItem("СписокРецептов")]
         private List<Recipe> _list;
 
         public RecipeContainer(List<Recipe> RecipeList)
@@ -29,12 +29,12 @@ namespace RecipeManager
         #region Serialize
         public RecipeContainer(SerializationInfo info, StreamingContext context)
         {
-            this._list = (List<Recipe>)info.GetValue("Recipes", typeof(List<Recipe>));
+            this._list = (List<Recipe>)info.GetValue("Рецепты", typeof(List<Recipe>));
         }
 
         public void GetObjectData(SerializationInfo info, StreamingContext context)
         {
-            info.AddValue("Recipes", _list);
+            info.AddValue("Рецепты", _list);
         }
         #endregion
 

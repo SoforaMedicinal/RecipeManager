@@ -83,7 +83,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "AddIngredientForm";
-            this.Text = "Ingredients";
+            this.Text = "Ингредиенты";
             this.ResumeLayout(false);
 
         }

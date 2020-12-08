@@ -10,7 +10,7 @@ namespace RecipeManager
     [Serializable]
     public class Recipe
     {
-        [XmlAttribute(AttributeName = "Description")]
+        [XmlAttribute(AttributeName = "Описание")]
         public string Description { get; set; }
 
         [XmlElement]
@@ -19,7 +19,7 @@ namespace RecipeManager
         [XmlArray]
         public IngredientStorage Ingredients { get; set; }
 
-        [XmlAttribute(AttributeName = "RecipeSteps")]
+        [XmlAttribute(AttributeName = "Этапы приготовления")]
         public string RecipeSteps { get; set; }
 
         protected Recipe()
@@ -39,10 +39,10 @@ namespace RecipeManager
         {
             var errors = new List<string>();
 
-            if (group is null) { errors.Add("The recipe must contain a group"); };
-            if (string.IsNullOrEmpty(description)) { errors.Add("Description cannot be empty"); }
-            if (string.IsNullOrEmpty(recipeSteps)) { errors.Add("Recipe steps must be specified"); }
-            if (ingredients.Count() == 0) { errors.Add("The recipe must contain ingredients"); }
+            if (group is null) { errors.Add("Рецепт должен содержать категорию"); };
+            if (string.IsNullOrEmpty(description)) { errors.Add("Описание не может быть пустым"); }
+            if (string.IsNullOrEmpty(recipeSteps)) { errors.Add("Укажите шаги рецепта"); }
+            if (ingredients.Count() == 0) { errors.Add("Рецепт должен содержать ингредиенты"); }
 
             if (errors.Any())
             {
@@ -55,7 +55,7 @@ namespace RecipeManager
 
         public override string ToString()
         {
-            return string.Format($"Description : {Description}\nGroup : {Group}\nIngredients : {Ingredients}\nRecipeSteps : {RecipeSteps}");
+            return string.Format($"Описание : {Description}\nКатегория : {Group}\nИнгредиенты : {Ingredients}\nЭтапы приготовления : {RecipeSteps}");
         }
     }
 }
