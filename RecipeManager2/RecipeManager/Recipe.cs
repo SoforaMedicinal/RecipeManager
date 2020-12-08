@@ -10,7 +10,7 @@ namespace RecipeManager
     [Serializable]
     public class Recipe
     {
-        [XmlAttribute(AttributeName = "Описание")]
+        [XmlAttribute(AttributeName = "Description")]
         public string Description { get; set; }
 
         [XmlElement]
@@ -19,7 +19,7 @@ namespace RecipeManager
         [XmlArray]
         public IngredientStorage Ingredients { get; set; }
 
-        [XmlAttribute(AttributeName = "Этапы приготовления")]
+        [XmlAttribute(AttributeName = "RecipeSteps")]
         public string RecipeSteps { get; set; }
 
         protected Recipe()
@@ -55,7 +55,7 @@ namespace RecipeManager
 
         public override string ToString()
         {
-            return string.Format($"Описание : {Description}\nКатегория : {Group}\nИнгредиенты : {Ingredients}\nЭтапы приготовления : {RecipeSteps}");
+            return string.Format($"Description : {Description}\nGroup : {Group}\nIngredients : {Ingredients}\nRecipeSteps : {RecipeSteps}");
         }
     }
 }
