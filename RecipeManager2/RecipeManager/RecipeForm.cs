@@ -90,10 +90,9 @@ namespace RecipeManager
 
         private void removeButton_Click(object sender, EventArgs e)
         {
-            AddIngredientForm formIngr = new AddIngredientForm(lvAddIngredients.Items); 
-            formIngr.ShowDialog();
-            if (formIngr.DialogResult == System.Windows.Forms.DialogResult.OK)
-                if (formIngr.Ingredient == null)
+            
+            
+                if (lvAddIngredients.SelectedIndices == null)
             {
                 MessageBox.Show("Please select at least one item from the list", "Delete error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
